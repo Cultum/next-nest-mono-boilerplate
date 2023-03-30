@@ -1,0 +1,18 @@
+type Invoice {
+  id: ID
+  currency: String
+  amount: String
+}
+
+type Query {
+  getInvoice(id: ID): Invoice
+}
+
+type Subscription {
+  invoiceRequested: SubscriptionPayload
+}
+
+type SubscriptionPayload {
+  invoiceId: String
+  tag: String
+}

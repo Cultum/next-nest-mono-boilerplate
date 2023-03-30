@@ -1,0 +1,28 @@
+{
+  "name": "sk",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "ultra -r build",
+    "lint": "ultra -r lint",
+    "tc": "ultra -r tc"
+  },
+  "main": "index.js",
+  "author": "venumteam <maxtor2808@gmail.com>",
+  "license": "MIT",
+  "workspaces": [
+    "apps/*",
+    "packages/*",
+    "services/*"
+  ],
+  "engines": {
+    "node": ">=14.6.0"
+  },
+  "dependencies": {
+    "fp-ts": "^2.13.1",
+    "ultra-runner": "^3.10.5",
+    "typescript": "^4.7.4",
+    "eslint": "8.36.0",
+    "lodash": "^4.17.21"
+  }
+}
